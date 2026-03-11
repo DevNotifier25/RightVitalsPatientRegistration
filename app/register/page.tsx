@@ -330,10 +330,10 @@ export default function RegisterPage() {
                                         <Checkbox id="sameAsPatientPri" />
                                         <Label htmlFor="sameAsPatientPri" className="text-[#000080] font-normal cursor-pointer">Same as Patient</Label>
                                     </div>
-                                    <div className="flex items-center space-x-2">
+                                    {/* <div className="flex items-center space-x-2">
                                         <Checkbox id="sameAsGuarantorPri" />
                                         <Label htmlFor="sameAsGuarantorPri" className="text-[#000080] font-normal cursor-pointer">Same as Guarantor</Label>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
                                     <div className="space-y-2">
@@ -375,10 +375,10 @@ export default function RegisterPage() {
                                         <Checkbox id="sameAsPatientSec" />
                                         <Label htmlFor="sameAsPatientSec" className="text-[#000080] font-normal cursor-pointer">Same as Patient</Label>
                                     </div>
-                                    <div className="flex items-center space-x-2">
+                                    {/* <div className="flex items-center space-x-2">
                                         <Checkbox id="sameAsGuarantorSec" />
                                         <Label htmlFor="sameAsGuarantorSec" className="text-[#000080] font-normal cursor-pointer">Same as Guarantor</Label>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
                                     <div className="space-y-2">
