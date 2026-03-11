@@ -124,16 +124,16 @@ export default function RegisterPage() {
                                         <Label htmlFor="ssn">SSN (optional)</Label>
                                         <Input id="ssn" />
                                     </div>
-                                    <div className="space-y-2">
+                                    {/* <div className="space-y-2">
                                         <Label htmlFor="employer">Employer <span className="text-red-500">*</span></Label>
                                         <Input id="employer" />
                                     </div>
                                     <div className="space-y-2">
                                         <Label htmlFor="occupation">Occupation <span className="text-red-500">*</span></Label>
                                         <Input id="occupation" />
-                                    </div>
+                                    </div> */}
 
-                                    <div className="space-y-2">
+                                    {/* <div className="space-y-2">
                                         <Label htmlFor="maritalStatus">Marital Status <span className="text-red-500">*</span></Label>
                                         <Select id="maritalStatus">
                                             <option value="">Select...</option>
@@ -142,7 +142,7 @@ export default function RegisterPage() {
                                             <option value="divorced">Divorced</option>
                                             <option value="widowed">Widowed</option>
                                         </Select>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </FormSection>
 
@@ -175,10 +175,10 @@ export default function RegisterPage() {
                                         <Label htmlFor="zip">Zip/Postal <span className="text-red-500">*</span></Label>
                                         <Input id="zip" />
                                     </div>
-                                    <div className="space-y-2">
+                                    {/* <div className="space-y-2">
                                         <Label htmlFor="county">County <span className="text-red-500">*</span></Label>
                                         <Input id="county" />
-                                    </div>
+                                    </div> */}
                                 </div>
                             </FormSection>
 
@@ -200,7 +200,11 @@ export default function RegisterPage() {
                             <FormSection title="Emergency Contact">
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
                                     <div className="space-y-2">
-                                        <Label htmlFor="emName">Emergency Contact Name <span className="text-red-500">*</span></Label>
+                                        <Label htmlFor="emName">Emergency First Name <span className="text-red-500">*</span></Label>
+                                        <Input id="emName" />
+                                    </div>
+                                    <div className="space-y-2">
+                                        <Label htmlFor="emName">Emergency Last Name <span className="text-red-500">*</span></Label>
                                         <Input id="emName" />
                                     </div>
                                     <div className="space-y-2">
@@ -221,13 +225,13 @@ export default function RegisterPage() {
                             {/* How did you hear about us? */}
                             <FormSection title="How did you hear about us?">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6">
-                                    {['Magazine', 'Internet', 'Hospital', 'Doctor\'s Office', 'Billboard', 'Pharmacy', 'Mailer', 'Newspaper', 'Radio', 'Drive By', 'Been here before', 'TV', 'Other', 'Friend/Family Member'].map((source) => (
+                                    {['How did you hear about us?'].map((source) => (
                                         <div key={source} className="space-y-2">
                                             <Label htmlFor={`hear_${source}`}>{source} (optional)</Label>
                                             <Select id={`hear_${source}`}>
                                                 <option value="">Select...</option>
-                                                <option value="yes">Yes</option>
-                                                <option value="no">No</option>
+                                                <option value="yes">Magazine</option>
+                                                <option value="no">Family/Friend</option>
                                             </Select>
                                         </div>
                                     ))}
@@ -236,7 +240,7 @@ export default function RegisterPage() {
 
                             <hr className="my-12 border-slate-200" />
 
-                            {/* Guarantor Sections */}
+                            {/* Guarantor Sections
                             <FormSection title="Guarantor Demographics">
                                 <div className="flex items-center space-x-2 mb-6 text-primary">
                                     <Checkbox id="sameAsPatientGuar" />
@@ -312,7 +316,7 @@ export default function RegisterPage() {
                                 </div>
                             </FormSection>
 
-                            <hr className="my-12 border-slate-200" />
+                            <hr className="my-12 border-slate-200" /> */}
 
                             <div className="flex items-center space-x-2 mb-10">
                                 <Checkbox id="noInsurance" />
